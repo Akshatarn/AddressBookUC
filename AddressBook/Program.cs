@@ -29,6 +29,9 @@ namespace AddressBook
                 case 3:
                     contact.ListPeople();       
                     break;
+                case 4:
+                    contact.DeletePerson();
+                    break;
                 default:
                     Console.WriteLine("Invalid Option selected , Please try again ");
                     break;
