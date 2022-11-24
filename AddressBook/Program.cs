@@ -12,25 +12,26 @@ namespace AddressBook
         {
             ContactList contact = new ContactList();
             contact.WelcomeMessage();
-        ReEnteringApp:                        
+        ReEnteringApp:                         //ability to add multiple address book hence repeating the complete process using label .
             Console.WriteLine("Select any one from below options \n" +
                 "Press 1 : to Create/Add a new contact\n" +
                 "Press 2 : to Edit/Modify any existing contact\n" +
-                "Press 3 : to view all the contacts in Address book.");
+                "Press 3 : to view all the contacts in Address book.\n" +
+                "Press 4 : to delete any existing contact");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    contact.AddPerson();        
+                    contact.AddPerson();        //Adding persom
                     break;
                 case 2:
-                    contact.EditPerson();       
+                    contact.EditPerson();       //Editing existing contact
                     break;
                 case 3:
-                    contact.ListPeople();       
+                    contact.ListPeople();       //viewing all contacts.
                     break;
                 case 4:
-                    contact.DeletePerson();
+                    contact.DeletePerson();     //deleting existing contact .
                     break;
                 default:
                     Console.WriteLine("Invalid Option selected , Please try again ");
